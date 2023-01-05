@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+.column {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hex {
+    color: aliceblue;
+}
+.fa-solid {
+    color: aliceblue;
+    font-size: 30px;
+}
+.fa-solid:hover,
+.hex:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.copyAlert{
+    color: aliceblue;
+    background: rgb(0, 0, 0,0.3);
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px 1px white;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+.copyAlert.active{
+    opacity: 1;
+}
